@@ -9,6 +9,7 @@ import java.util.Iterator;
 
 /**
  * Created by Jay on 2/3/2015.
+ * Test comment for pushing.
  */
 public class Collisions {
     public static void removeBullets() {
@@ -19,6 +20,7 @@ public class Collisions {
             bullet.x += 200 * bullet.velocity.x * Gdx.graphics.getDeltaTime();
             if (bullet.y + Constants.BULLET_HEIGHT < 0 || bullet.y > Constants.GAMESCREEN_HEIGHT) {
                 uIter.remove();
+                System.out.println("PUSH");
             }
         }
     }
